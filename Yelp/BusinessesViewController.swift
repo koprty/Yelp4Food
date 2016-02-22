@@ -29,6 +29,7 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight=UITableViewAutomaticDimension
+        
         tableView.estimatedRowHeight = 100
         
         businesses=[]

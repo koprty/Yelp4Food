@@ -35,8 +35,14 @@ class BusinessCell: UITableViewCell {
         // Initialization code
         thumbnailImage.layer.cornerRadius = 4
         thumbnailImage.clipsToBounds = true
+        
+        titleLabel.preferredMaxLayoutWidth = titleLabel.frame.size.width
     }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        titleLabel.preferredMaxLayoutWidth = titleLabel.frame.size.width
 
+    }
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
